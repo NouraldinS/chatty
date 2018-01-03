@@ -13,4 +13,5 @@ router.get('/', login.page);
 
 
 
-router.post('/login', login.process);
+router.post('/login', login.processes);
+module.exports = router;
