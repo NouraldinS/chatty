@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../css/signup.css">
+<head>
+  <meta charset="utf-8">
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <div class="sign-up-modal">
+    <div class="logo-container">
+    <svg class="logo" width="94.4px" height="56px">
+      <g>
+        <polygon points="49.3,56 49.3,0 0,28 	" />
+        <path d="M53.7,3.6v46.3l40.7-23.2L53.7,3.6z M57.7,10.6l28.4,16.2L57.7,42.9V10.6z" />
+      </g>
+    </svg>
+  </div>
+
+  <form class="details">
+    <div class="input-container">
+      <input class="col-sm-12 email-input with-placeholder" id="email" type="email" placeholder="Email" />
+    </div>
+    <div class="input-container">
+      <input class="col-sm-5 username-input with-placeholder" id="username" type="text" placeholder="Username" maxlength="8" />
+    </div>
+    <div class="input-container">
+      <input class="col-sm-5 col-sm-push-2 password-input with-placeholder" id="password" type="password" placeholder="Password" />
+    </div>
+
+    <div class="col-sm-12 form-checkbox">
+      <label>
+        <input type="checkbox" value="true"> Keep me signed in</label>
+      </div>
+
+      <input id="sign-up-button" type="submit" value="Sign Up">
+
+      <p>Already have an account? <a href="#signIn">Sign in</a></p>
+
+    </form>
+  </div>
+  <!-- <form action="/signup" method="post">
+    <input type="text" name="email" placeholder="Email" id="email">
+    <input type="text" name="username" placeholder="username" id="username">
+    <input type="password" name="password" placeholder="password" id="password">
+    <input type="password" name="passwordv" placeholder="your password again" id="passwordv">
+    <button id="submit" value="submit" type="submit">Submit</button>
+  </form> -->
+  <script src="signup.js" type="text/javascript"></script>
+</body>
+
+</html>

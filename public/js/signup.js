@@ -1,12 +1,12 @@
-const login = document.querySelector('#login-button');
-console.log(login);
-login.addEventListener('click', (event) => {
-    event.preventDefault();
-    const url = '/login';
+const submit = document.querySelector('#submit');
+console.log(submit);
+submit.addEventListener('click', () => {
+    const url = '/signup';
     const xhr = new XMLHttpRequest();
     const email = document.querySelector('#email').value;
+    const username = document.querySelector('#username').value;
     const password = document.querySelector('#password').value;
-    console.log('asdkpf!!!?????', email, password);
+    console.log(username, password);
     xhr.onreadystatechange = function() {
       if (xhr.status === 200 && xhr.readyState == 4) {
         const response = xhr.responseText;
@@ -15,6 +15,5 @@ login.addEventListener('click', (event) => {
       }
     };
     xhr.open('POST', url);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({email, password}));
+    xhr.send({email, username, password});
 });
