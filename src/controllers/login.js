@@ -7,11 +7,6 @@ const processes = (req, res) => {
 }
 
 
-
-
-
-
-
 module.exports = {
   processes,
   page

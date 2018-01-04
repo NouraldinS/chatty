@@ -78,7 +78,6 @@ body {
 		border-width: 2px;
 		border-color: rgba(247, 247, 247, .3);
 		border-style: solid;
-		background: url('transparent');
 }
 
 .sign-up-modal input[type="email"]:focus,

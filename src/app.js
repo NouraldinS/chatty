@@ -17,10 +17,8 @@ app.engine('hbs', hbs({
 }));
 
 app.use(parser.json());
-app.use(parser.urlencoded( {extended: false}));
-app.use(parser.raw({type: () => {
-  return true;
-}}));
+app.use(parser.urlencoded({ extended: false }));
+app.use(parser.raw({ type: () => true }));
 app.use(express.static(path.join(__dirname, '..', 'public')));
 // app.use(favicon(path.join(__dirname, '..', 'public', 'img', '')));
 app.use(routes);
